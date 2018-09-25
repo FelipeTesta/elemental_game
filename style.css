@@ -15,6 +15,16 @@ p{
     margin-top: 30px;
 }
 
+#block {
+    position: fixed;
+    display: none;
+    left: 0; top: 0;
+    height: 100%; width: 100%;
+    mix-blend-mode: hue;
+    background-color: gray;
+
+}
+
 .result{
     color: ghostwhite;
     mix-blend-mode: difference;
@@ -24,19 +34,13 @@ p{
     transform: translate(-50%, 0);}
 
 #perdido {
-    color: ghostwhite;
-    mix-blend-mode: difference;
-    font-size: 10pt;
+    color: black;
+    mix-blend-mode: darken;
+    font-size: 62pt;
     position: absolute;
-    left: 50%; bottom: 45%;
+    left: 50%; bottom: 0%;
     transform: translate(-50%, -50%);
 }
-
-#score1, #score2{text-align: center;
-    font-size: 36pt;
-    mix-blend-mode: difference;
-    color: ghostwhite;
-    transform: translate(0, 30%);}
 
 .fundoYin{
     position: fixed;
@@ -81,12 +85,25 @@ p{
     border-radius: 50%;
     left: 50%; top: 50%;
     transform: translate(-50%,-50%);}
+
+#elemento_esq, #elemento_dir {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-100%,-50%);
+    
+}
+
+#img_esq, #img_dir {
+    width: 200%;
+}
+
 #botoes {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -55%);}
+
 .button {
     border: none;
     border-radius: 50%;
@@ -96,6 +113,7 @@ p{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;}
+
 .button:hover {
     box-shadow: 0 0 10px lightgray;
     }
